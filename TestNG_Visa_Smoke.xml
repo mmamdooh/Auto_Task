@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Default suite" guice-stage="DEVELOPMENT">
+	<test thread-count="5" name="Default test" verbose="2">
+		<parameter name="Browser" value="FireFox" />
+		<parameter name="URL" value="https://subscribe.stctv.com/sa-ar?" />
+		<parameter name="KSALite" value="لايت" />
+		<parameter name="KSABasic" value="الأساسية" />
+		<parameter name="KSAPrem" value="بريميوم" />
+		<parameter name="KSALitePrice" value="15" />
+		<parameter name="KSABasicPrice" value="25" />
+		<parameter name="KSAPremPrice" value="60" />
+		<parameter name="KSACurrency" value="ريال سعودي" />
+		<parameter name="BHLite" value="لايت" />
+		<parameter name="BHBasic" value="الأساسية" />
+		<parameter name="BHPrem" value="بريميوم" />
+		<parameter name="BHLitePrice" value="2" />
+		<parameter name="BHBasicPrice" value="3" />
+		<parameter name="BHPremPrice" value="6" />
+		<parameter name="BHCurrency" value="دينار بحريني" />
+		<parameter name="KWLite" value="لايت" />
+		<parameter name="KWBasic" value="الأساسية" />
+		<parameter name="KWPrem" value="بريميوم" />
+		<parameter name="KWLitePrice" value="1.2" />
+		<parameter name="KWBasicPrice" value="2.5" />
+		<parameter name="KWPremPrice" value="4.8" />
+		<parameter name="KWCurrency" value="دينار كويتي" />
+		<groups>
+			<run>
+				<include name="Task.Smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="subscribe.TestCases.Subscribe_Test" />
+		</classes>
+	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
